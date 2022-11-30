@@ -7,3 +7,7 @@ class AuthenticationError(ClickException):
 
 class ExportError(ClickException):
     pass
+
+
+class InputError(ClickException):
+    pass

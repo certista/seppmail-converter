@@ -5,16 +5,36 @@ This python tool allows you to convert [SEPPMail](https://www.seppmail.com/) enc
 ## Usage
 
 ```
-Usage: seppmail-converter [OPTIONS] INPUT_FILE
+Usage: main.py [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  convert*
+  serve 
+```
+
+### Convert
+
+Convert an encrypted email file to a `.eml` file.
+
+```
+Usage: main.py convert [OPTIONS] INPUT_FILE
 
 Options:
   -o, --output PATH
   -u, --username TEXT
+  -p, --password TEXT
   -f, --force          Skip SEPPMail input file validation
   -d, --delete         Delete input file after conversion
-  -p, --password TEXT
   --help               Show this message and exit.
- ```
+```
+
+### Serve
+
+Start a web server to convert encrypted email files to `.eml` files via a web interface.
+
 
 Relevant environment variables:
 
